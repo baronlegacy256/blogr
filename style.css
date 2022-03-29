@@ -1,0 +1,260 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: silver;
+    margin-left: 10px;
+    border: none;
+}
+
+
+#section-1 {
+    background-color: hsl(356, 100%, 66%);
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    color: hsl(0, 0%, 100%);
+
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header ul {
+    list-style-type: none;
+}
+
+#header ul li {
+    display: inline;
+    padding: 20px;
+}
+
+#header ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner{
+    margin-left: 0,auto;
+}
+
+.button {
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0px;
+    border: none;
+    color:hsl(356, 100%, 66%)
+
+}
+
+.button:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: hsl(355, 100%, 74%);
+
+
+}
+#info-buttons{
+    display: flex;
+    justify-content: center;
+   
+}
+
+h2, h3 {
+    color: hsl(208, 49%, 24%);
+}
+
+
+
+
+
+
+/*section two code*/
+
+#section-2 {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1fr,2);
+    grid-template-rows: repeat(1fr,3);
+    align-content: center;
+    background-color: silver;
+   
+}
+
+h2 {
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
+justify-self: center;
+align-content: center;
+}
+
+.text-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+}
+    
+.text-2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        justify-self: center;
+}
+
+.image-container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+     grid-row-start: 2;
+     grid-row-end: 4;
+    background-image: url("illustration-editor-desktop.svg");
+    background-size: cover;
+}
+
+
+
+
+
+/*styles for section 3*/
+
+#section-3{
+    display:grid;
+    background-color: hsl(237, 17%, 21%); 
+    grid-template-columns: repeat(1fr,2);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    grid-template-rows: repeat(1fr,2)
+
+    
+}
+
+.image-container2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1 ;
+    grid-row-end: 3;
+    background-image: url("illustration-phones.svg");
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    
+}
+
+.text-dark {
+    grid-column-start: 2;
+    grid-column-end: 3; 
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: center;
+    color: hsl(0, 0%, 100%);;
+}
+
+
+
+/*styles for section-4*/
+
+
+#section-4{
+    display: grid;
+    grid-template-columns: repeat(1fr,2);
+    grid-template-rows: repeat(1fr,2);
+    align-content: center;
+    background-color: silver;
+
+}
+
+#image-container-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1 ;
+    grid-row-end: 3;
+    background-image: url("illustration-laptop-desktop.svg");
+    background-size: cover;
+}
+
+.text-light {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1 ;
+    grid-row-end: 3;
+    justify-self: center;
+
+
+}
+
+/*styles for the footer section*/
+
+#footer {
+    background-color: hsl(240, 10%, 16%);
+    padding: 20px;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(1fr,4);
+    grid-template-rows: repeat(1fr,2);
+    align-content: center;
+}
+
+#footer-banner {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1 ;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center;    
+    color: #fff;
+}
+
+#list-one {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1 ;
+    grid-row-end: 3;
+    justify-self: center; 
+}
+
+#list-two{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1 ;
+    grid-row-end: 3;
+    justify-self: center; 
+}
+
+#list-three{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1 ;
+    grid-row-end: 3;
+    justify-self: center; 
+}
+
+.footer-lists {
+    list-style-type: none;
+}
+
+.footer-lists li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+/*responsive dedign*/
+
+@media (max-width: 500px){
+#section-2, #header {
+    display: block;
+}
+
+
+
+    
+}
